@@ -30,7 +30,7 @@
               {{ verse }}
             </li>
           </ul>
-          <div class="more" ng-show="poem.poem[0].length > 4" ng-click="goPoem(poem.id)">
+          <div class="more" ng-show="poem.poem[0].length > 4 || poem.poem.length >= 2" ng-click="goPoem(poem.id)">
             Seguir leyendo...
           </div>
         </div>

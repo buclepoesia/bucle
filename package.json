@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "description": "Poems",
-  "repository": "",
+  "repository": "https://github.com/MatiPruvost/bucle-web",
   "license": "MIT",
   "devDependencies": {
     "bower": "^1.7.7",
