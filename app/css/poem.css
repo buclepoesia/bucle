@@ -63,14 +63,30 @@
       opacity: 0.2;
     }
     .poems .footer .previous .title,
-    .poems .footer .next .title {
-      text-align: center;
+    .poems .footer .previous .text-footer,
+    .poems .footer .next .title,
+    .poems .footer .next .text-footer {
+      width: 100%;
       position: absolute;
       top: 50%;
       left: 50%;
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
+      text-align: center;
+    }
+    .poems .footer .previous .title,
+    .poems .footer .previous .text-footer .title,
+    .poems .footer .next .title,
+    .poems .footer .next .text-footer .title {
       font-size: 2em;
       font-weight: bold;
+    }
+    .poems .footer .previous .date,
+    .poems .footer .previous .text-footer .date,
+    .poems .footer .next .date,
+    .poems .footer .next .text-footer .date {
+      margin-top: 60px;
+      font-size: 1em;
+      font-weight: normal;
     }

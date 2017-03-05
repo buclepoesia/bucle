@@ -5,8 +5,8 @@ angular.module('bucleApp.core')
     return {
       restrict: 'A',
       link: function($scope, iElm, iAttrs, controller) {
-        var height = screen.height - 80;
-        var width = screen.width;
+        var height = window.innerHeight;
+        var width = window.innerWidth;
         iElm.css('height', height + 'px');
         // iElm.css('width', width + 'px');
       }
@@ -18,8 +18,8 @@ angular.module('bucleApp.core')
     return {
       restrict: 'A',
       link: function($scope, iElm, iAttrs, controller) {
-        var height = screen.height - 40;
-        var width = screen.width;
+        var height = window.innerHeight - 40;
+        var width = window.innerWidth;
         iElm.css('height', height + 'px');
         // iElm.css('width', width + 'px');
       }

@@ -3,8 +3,8 @@
   <custom-header></custom-header>
 
   <main>
-    <section class="page" full-size2>
-      <div class="page-main" ng-parallax speed="0" reverse="true" full-size>
+    <section class="page" full-size>
+      <div class="page-main" ng-parallax pattern="bgPattern" speed="0" reverse="true" full-size2>
         <div class="text">
           <div class="title">
             Bucle
@@ -16,8 +16,8 @@
         <custom-footer></custom-footer>
       </div>
     </section>
-    <section ng-repeat="poem in poems" full-size2 id="{{poem.id}}">
-      <div class="poem" ng-parallax pattern="poem.img" speed="0" reverse="true" full-size>
+    <section ng-repeat="poem in poems" full-size>
+      <div class="poem" ng-parallax pattern="poem.img" speed="0" reverse="true" full-size2>
         <div class="text">
           <div class="title" ng-click="goPoem(poem.id)">
             {{ poem.title }}
@@ -36,17 +36,17 @@
         </div>
       </div>
     </section>
-    <section class="page" full-size2>
-      <div class="page-main" ng-parallax speed="0" reverse="true" full-size>
+    <section class="page" full-size>
+      <div class="page-main" ng-parallax pattern="bgPattern" speed="0" reverse="true" full-size2>
         <div class="text">
           <div class="subtitle">
             <span ng-click=goArchives()>
               Archivos
             </span>
-            <span>
+            <span ng-show="showNext">
               |
             </span>
-            <span ng-click=goNext()>
+            <span ng-click=goNext() ng-show="showNext">
               Página siguiente
             </span>
           </div>

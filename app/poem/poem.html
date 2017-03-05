@@ -9,8 +9,8 @@
     <div class="date">
       {{ poem.date }}
     </div>
-    <ul class="stranza" ng-repeat="stranza in poem.poem">
-      <li class="verse" ng-repeat="verse in stranza">
+    <ul class="stranza" ng-repeat="stranza in poem.poem track by $index">
+      <li class="verse" ng-repeat="verse in stranza track by $index">
         {{ verse }}
       </li>
     </ul>
@@ -25,8 +25,13 @@
       <div class="title" ng-hide="previousHover">
         Poema anterior
       </div>
-      <div class="title" ng-show="previousHover">
-        {{poemPrevious.title}}
+      <div class="text-footer">
+        <div class="title" ng-show="previousHover">
+          {{poemPrevious.title}}
+        </div>
+        <div class="date" ng-show="previousHover">
+          {{poemPrevious.date}}
+        </div>
       </div>
     </div>
     <div class="next" ng-click="goPoem(poemNext.id)"
@@ -35,8 +40,13 @@
       <div class="title" ng-hide="nextHover">
         Poema siguiente
       </div>
-      <div class="title" ng-show="nextHover">
-        {{poemNext.title}}
+      <div class="text-footer">
+        <div class="title" ng-show="nextHover">
+          {{poemNext.title}}
+        </div>
+        <div class="date" ng-show="nextHover">
+          {{poemNext.date}}
+        </div>
       </div>
     </div>
   </div>

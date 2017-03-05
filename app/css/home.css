@@ -3,6 +3,9 @@
   padding: 20px;
   padding-left: 88px;
   background-size: cover!important;
+  background-repeat: no-repeat!important;
+  background-attachment: fixed!important;
+  background-position: center center!important;
 }
 
   .home .page-main .text,
