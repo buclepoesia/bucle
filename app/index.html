@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="bucleApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="bucleApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="bucleApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="bucleApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bucle</title>
+  <link rel="icon" type="image/icon" href="logo.svg" class="">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600" rel="stylesheet">
+  <link href="css/bucle.css" rel="stylesheet">
+  <link href="css/home.css" rel="stylesheet">
+  <link href="css/poem.css" rel="stylesheet">
+  <link href="css/archive.css" rel="stylesheet">
+</head>
+<body>
+
+  <div ng-view></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/ng-simple-parallax/src/ngParallax.min.js"> </script>
+  <script src="app.js"></script>
+  <script src="components/values/poems.js"></script>
+  <script src="components/directives/footer.js"></script>
+  <script src="components/directives/full-size.js"></script>
+  <script src="components/directives/header.js"></script>
+  <script src="archives/archives.js"></script>
+  <script src="home/home.js"></script>
+  <script src="poem/poem.js"></script>
+</body>
+</html>

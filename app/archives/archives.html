@@ -1,0 +1,16 @@
+<div class="poems">
+
+  <custom-header></custom-header>
+
+  <div ng-repeat="poem in poems" class="text">
+    <div class="title" ng-click="goPoem(poem.id)">
+      {{ poem.title }}
+    </div>
+    <div class="date">
+      12 de abril 2017
+    </div>
+  </div>
+
+  <custom-footer></custom-footer>
+
+</div>

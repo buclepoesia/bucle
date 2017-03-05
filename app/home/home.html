@@ -1,0 +1,59 @@
+<div class="home">
+
+  <custom-header></custom-header>
+
+  <main>
+    <section class="page" full-size2>
+      <div class="page-main" ng-parallax speed="0" reverse="true" full-size>
+        <div class="text">
+          <div class="title">
+            Bucle
+          </div>
+          <div class="subtitle">
+            Poemas escritos desde el espacio
+          </div>
+        </div>
+        <custom-footer></custom-footer>
+      </div>
+    </section>
+    <section ng-repeat="poem in poems" full-size2 id="{{poem.id}}">
+      <div class="poem" ng-parallax pattern="poem.img" speed="0" reverse="true" full-size>
+        <div class="text">
+          <div class="title" ng-click="goPoem(poem.id)">
+            {{ poem.title }}
+          </div>
+          <div class="date">
+            {{ poem.date }}
+          </div>
+          <ul class="verse">
+            <li ng-repeat="verse in poem.poem[0] | limitTo:4">
+              {{ verse }}
+            </li>
+          </ul>
+          <div class="more" ng-show="poem.poem[0].length > 4" ng-click="goPoem(poem.id)">
+            Seguir leyendo...
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="page" full-size2>
+      <div class="page-main" ng-parallax speed="0" reverse="true" full-size>
+        <div class="text">
+          <div class="subtitle">
+            <span ng-click=goArchives()>
+              Archivos
+            </span>
+            <span>
+              |
+            </span>
+            <span ng-click=goNext()>
+              Página siguiente
+            </span>
+          </div>
+        </div>
+        <custom-footer></custom-footer>
+      </div>
+    </section>
+  </main>
+
+</div>

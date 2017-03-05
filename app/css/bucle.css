@@ -1,0 +1,50 @@
+body {
+  background-color: #212121;
+  color: #FFFFFF;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  margin: 0;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 3000;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+  header .logo-link {
+    background-color: #212121;
+    position: fixed;
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    z-index: 99;
+  }
+    header .logo-link .logo {
+      background-color: #FFFFFF;
+      background-image: url(../logo.svg);
+      display: block;
+      position: absolute;
+      width: 48px;
+      height: 48px;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+footer {
+  width: 100%;
+  position: absolute;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+}
+  footer section {
+    font-size: 0.9em;
+    font-weight: lighter;
+    padding: 5px;
+  }
