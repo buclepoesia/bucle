@@ -4,7 +4,12 @@
 
   <main>
     <section class="page" full-size>
-      <div class="page-main" ng-parallax pattern="bgPattern" speed="0" reverse="true" full-size2>
+      <div class="page-main"
+          ng-parallax
+          pattern="bgPattern"
+          speed="0"
+          reverse="true"
+          full-size>
         <div class="text">
           <div class="title">
             Bucle
@@ -16,28 +21,46 @@
         <custom-footer></custom-footer>
       </div>
     </section>
-    <section ng-repeat="poem in poems" full-size>
-      <div class="poem" ng-parallax pattern="poem.img" speed="0" reverse="true" full-size2>
-        <div class="text">
-          <div class="title" ng-click="goPoem(poem.id)">
-            {{ poem.title }}
-          </div>
-          <div class="date">
-            {{ poem.date }}
-          </div>
-          <ul class="verse">
-            <li ng-repeat="verse in poem.poem[0] | limitTo:4">
-              {{ verse }}
-            </li>
-          </ul>
-          <div class="more" ng-show="poem.poem[0].length > 4 || poem.poem.length >= 2" ng-click="goPoem(poem.id)">
-            Seguir leyendo...
-          </div>
+    <section class="poem"
+        ng-init="poemHover=false"
+        ng-repeat="poem in poems"
+        full-size>
+      <div class="poem-background"
+        ng-class="{hover:poemHover}"
+        ng-parallax
+        pattern="poem.img"
+        speed="0"
+        reverse="true"
+        full-size>
+      </div>
+      <div class="text"
+          ng-mouseleave="poemHover=false"
+          ng-mouseover="poemHover=true">
+        <div class="title" ng-click="goPoem(poem.id)">
+          {{ poem.title }}
+        </div>
+        <div class="date">
+          {{ poem.date }}
+        </div>
+        <ul class="verse">
+          <li ng-repeat="verse in poem.poem[0] | limitTo:4">
+            {{ verse }}
+          </li>
+        </ul>
+        <div class="more"
+            ng-show="poem.poem[0].length > 4 || poem.poem.length >= 2"
+            ng-click="goPoem(poem.id)">
+          Seguir leyendo...
         </div>
       </div>
     </section>
     <section class="page" full-size>
-      <div class="page-main" ng-parallax pattern="bgPattern" speed="0" reverse="true" full-size2>
+      <div class="page-main"
+          ng-parallax
+          pattern="bgPattern"
+          speed="0"
+          reverse="true"
+          full-size>
         <div class="text">
           <div class="subtitle">
             <span ng-click=goArchives()>

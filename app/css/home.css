@@ -1,22 +1,49 @@
 .home .page-main,
-.home .poem {
-  padding: 20px;
-  padding-left: 88px;
+.home .poem .poem-background {
   background-size: cover!important;
   background-repeat: no-repeat!important;
   background-attachment: fixed!important;
   background-position: center center!important;
 }
 
+.home .poem {
+  overflow: hidden;
+}
   .home .page-main .text,
   .home .poem .text {
+    padding: 20px;
+    padding-left: 88px;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
     transform: translateY(-50%);
+    z-index: 99;
   }
-
+  .home .poem .poem-background {
+    -webkit-transform: rotate(0) scale(1);
+    -ms-transform: rotate(0) scale(1);
+    -moz-transform: rotate(0) scale(1);
+    -o-transform: rotate(0) scale(1);
+    transform: rotate(0) scale(1);
+    -webkit-transition: 0.8s ease-in-out;
+  	transition: 0.8s ease-in-out;
+  }
+  .home .poem .poem-background.hover {
+    opacity: 0.2;
+    -webkit-transform: rotate(1.02deg) scale(1.02);
+    -ms-transform: rotate(1.02deg) scale(1.02);
+    -moz-transform: rotate(1.02deg) scale(1.02);
+  	-o-transform: rotate(1.02deg) scale(1.02);
+  	transform: rotate(1.02deg) scale(1.02);
+  	-webkit-transition: 0.8s ease-in-out;
+  	transition: 0.8s ease-in-out;
+  }
+  .home .poem .text {
+    top: -50%;
+  }
     .home .page-main .title,
     .home .poem .title {
       font-size: 4em;

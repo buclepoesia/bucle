@@ -5,7 +5,7 @@ angular.module('bucleApp.core', [])
   {
     id: 10,
     title: "Bondi",
-    img: "img/bg1.jpg",
+    img: "img/bondi.jpg",
     date: "2 de marzo 2017",
     poem: [
       [
@@ -17,7 +17,7 @@ angular.module('bucleApp.core', [])
   {
     id: 9,
     title: "Antes",
-    img: "img/bg11.jpeg",
+    img: "img/antes.jpeg",
     date: "22 de febrero 2017",
     poem: [
       [
@@ -29,7 +29,7 @@ angular.module('bucleApp.core', [])
   {
     id: 8,
     title: "En la medianera",
-    img: "img/bg6.jpeg",
+    img: "img/en-la-medianera.jpeg",
     date: "15 de febrero 2017",
     poem: [
       [
@@ -43,7 +43,7 @@ angular.module('bucleApp.core', [])
   {
     id: 7,
     title: "Capaz de sobrevivir",
-    img: "img/bg3.jpg",
+    img: "img/capaz-de-sobrevivir.jpg",
     date: "4 de febrero 2017",
     poem: [
       [
@@ -88,7 +88,7 @@ angular.module('bucleApp.core', [])
   {
     id: 6,
     title: "Es el rey",
-    img: "img/bg6.jpg",
+    img: "img/es-el-rey.jpg",
     date: "28 de enero 2017",
     poem: [
       [
@@ -105,7 +105,7 @@ angular.module('bucleApp.core', [])
   {
     id: 5,
     title: "malpaso es tu nuevo nombre",
-    img: "img/bg8.jpeg",
+    img: "img/malpaso-es-tu-nuevo-nombre.jpeg",
     date: "19 de enero 2017",
     poem: [
       [
@@ -202,7 +202,7 @@ angular.module('bucleApp.core', [])
   {
     id: 4,
     title: "diálogo de dos tormentas",
-    img: "img/bg10.jpeg",
+    img: "img/dialogo-de-dos-tormentas.jpeg",
     date: "15 de enero 2017",
     poem: [
       [
@@ -300,7 +300,7 @@ angular.module('bucleApp.core', [])
   {
     id: 3,
     title: "Ingravidez",
-    img: "img/bg9.jpeg",
+    img: "img/ingravidez.jpeg",
     date: "8 de enero 2017",
     poem: [
       [
@@ -365,7 +365,7 @@ angular.module('bucleApp.core', [])
   {
     id: 2,
     title: "Paisaje",
-    img: "img/bg4.jpg",
+    img: "img/paisaje.jpg",
     date: "5 de enero 2017",
     poem: [
       [
@@ -398,7 +398,7 @@ angular.module('bucleApp.core', [])
   {
     id: 1,
     title: "Variación",
-    img: "img/bg7.jpg",
+    img: "img/variacion.jpg",
     date: "1 de enero 2017",
     poem: [
       [
