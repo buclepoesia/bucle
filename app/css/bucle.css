@@ -11,24 +11,92 @@ body {
   body {
     font-size: 6px;
   }
+  body .home .page-main .text,
+  body .home .poem .text,
+  body .poems .text,
+  body .writers .text {
+    padding-left: 30px;
+  }
+  body .home .page-main .subtitle,
+  body .home .poem .verse,
+  body .poems .text .stranza .verse li,
+  body .writers .text .description {
+    font-size: 3.5em;
+  }
+  body .home .poem .date,
+  body .poems .text .writer,
+  body .poems .text .date {
+    font-size: 2em;
+  }
+  body .home .poem .more {
+    font-size: 2em;
+  }
+  body footer section {
+    font-size: 2em;
+  }
 }
 @media (min-width: 321px) and (max-width: 375px) {
   body {
     font-size: 10px;
+  }
+  body .home .page-main .text,
+  body .home .poem .text,
+  body .poems .text,
+  body .writers .text {
+    padding-left: 30px;
+  }
+  body .home .page-main .subtitle,
+  body .home .poem .verse,
+  body .poems .text .stranza .verse li,
+  body .writers .text .description {
+    font-size: 3.5em;
+  }
+  body .home .poem .date,
+  body .poems .text .writer,
+  body .poems .text .date {
+    font-size: 2em;
+  }
+  body .home .poem .more {
+    font-size: 2em;
+  }
+  body footer section {
+    font-size: 2em;
   }
 }
 @media (min-width: 376px) and (max-width: 425px) {
   body {
     font-size: 12px;
   }
+  body .home .page-main .text,
+  body .home .poem .text,
+  body .poems .text,
+  body .writers .text {
+    padding-left: 30px;
+  }
+  body .home .page-main .subtitle,
+  body .home .poem .verse,
+  body .poems .text .stranza .verse li,
+  body .writers .text .description {
+    font-size: 3.5em;
+  }
+  body .home .poem .date,
+  body .poems .text .writer,
+  body .poems .text .date {
+    font-size: 2em;
+  }
+  body .home .poem .more {
+    font-size: 2em;
+  }
+  body footer section {
+    font-size: 2em;
+  }
 }
 
 header {
   position: fixed;
   z-index: 9999;
-  top: 0;
-  left: 0;
-  padding: 20px;
+  top: 20px;
+  left: 20px;
 }
 
   header .logo-link {
@@ -55,6 +123,10 @@ footer {
   bottom: 0;
   left: 0;
   padding: 20px;
+}
+.poems footer,
+.writers footer {
+  position: inherit;
 }
   footer section {
     font-size: 0.9em;

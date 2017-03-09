@@ -6,6 +6,9 @@
     <div class="title">
       {{ poem.title }}
     </div>
+    <div class="writer" ng-click="goWriter(writer.id)">
+      {{ writer.name }}
+    </div>
     <div class="date">
       {{ poem.date }}
     </div>
@@ -21,7 +24,7 @@
   <div class="footer" ng-init="previousHover=false; nextHover=false;">
     <div class="previous" ng-click="goPoem(poemPrevious.id)"
         ng-mouseover="previousHover=true" ng-mouseleave="previousHover=false">
-      <img src="{{poemPrevious.img}}" ng-class="{hover:previousHover}"/>
+      <img src="{{getSrc(poemPrevious.img)}}" ng-class="{hover:previousHover}"/>
       <div class="title" ng-hide="previousHover">
         Poema anterior
       </div>
@@ -36,7 +39,7 @@
     </div>
     <div class="next" ng-click="goPoem(poemNext.id)"
         ng-mouseover="nextHover=true" ng-mouseleave="nextHover=false">
-      <img src="{{poemNext.img}}" ng-class="{hover:nextHover}"/>
+      <img src="{{getSrc(poemNext.img)}}" ng-class="{hover:nextHover}"/>
       <div class="title" ng-hide="nextHover">
         Poema siguiente
       </div>

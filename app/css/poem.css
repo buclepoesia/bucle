@@ -8,9 +8,15 @@
     font-size: 4em;
     font-weight: bold;
   }
+  .poems .text .writer,
   .poems .text .date {
     font-size: 1.4em;
     padding-top: 5px;
+  }
+  .poems .text .writer {
+    font-weight: bold;
+  }
+  .poems .text .date {
     padding-bottom: 20px;
     font-weight: normal;
   }
@@ -24,11 +30,6 @@
       font-size: 4em;
       font-weight: normal;
     }
-
-.poems footer {
-  position: inherit;
-}
-
 
 .poems .footer {
   width: 50%;

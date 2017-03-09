@@ -1,0 +1,18 @@
+<div class="writers">
+
+  <custom-header></custom-header>
+
+  <div class="text" min-height>
+    <div class="title">
+      {{ writer.name }}
+    </div>
+    <div class="description">
+      <p ng-repeat="paragraph in writer.description">
+        {{ paragraph }}
+      </p>
+    </div>
+  </div>
+
+  <custom-footer></custom-footer>
+
+</div>

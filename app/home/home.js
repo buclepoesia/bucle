@@ -13,9 +13,10 @@ angular.module('bucleApp.home', ['ngRoute'])
   '$location',
   '$scope',
   '$window',
+  'Device',
   'Page',
   'Poems',
-  function($location, $scope, $window, Page, Poems) {
+  function($location, $scope, $window, Device, Page, Poems) {
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
     $scope.bgPattern = '../img/bg.jpeg';
@@ -36,5 +37,8 @@ angular.module('bucleApp.home', ['ngRoute'])
       $scope.showNext = showNext ();
       var pos = (window.innerHeight - 40) * ($scope.page * Page.elements - 4);
       $window.scrollTo(0, pos);
+    };
+    $scope.getSrc = function (src) {
+      return Device.getSrc(src);
     };
 }]);

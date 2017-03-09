@@ -1,0 +1,22 @@
+.writers .text {
+  padding: 20px;
+  padding-left: 88px;
+  padding-top: 88px;
+}
+
+  .writers .text .title {
+    font-size: 4em;
+    font-weight: bold;
+  }
+  .writers .text .description {
+    font-size: 4em;
+    font-weight: normal;
+    margin-top: 20px;
+  }
+  .writers .text .description p {
+    margin: 0;
+    margin-top: 40px;
+  }
+  .writers .text .description p:last-child {
+    margin-bottom: 40px;
+  }

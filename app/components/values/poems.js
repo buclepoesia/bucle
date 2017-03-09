@@ -4,6 +4,7 @@ angular.module('bucleApp.core', [])
 .constant('Poems', [
   {
     id: 10,
+    writer: 1,
     title: "Bondi",
     img: "img/bondi.jpg",
     date: "2 de marzo 2017",
@@ -16,6 +17,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 9,
+    writer: 1,
     title: "Antes",
     img: "img/antes.jpeg",
     date: "22 de febrero 2017",
@@ -28,6 +30,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 8,
+    writer: 1,
     title: "En la medianera",
     img: "img/en-la-medianera.jpeg",
     date: "15 de febrero 2017",
@@ -42,6 +45,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 7,
+    writer: 1,
     title: "Capaz de sobrevivir",
     img: "img/capaz-de-sobrevivir.jpg",
     date: "4 de febrero 2017",
@@ -87,6 +91,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 6,
+    writer: 1,
     title: "Es el rey",
     img: "img/es-el-rey.jpg",
     date: "28 de enero 2017",
@@ -104,6 +109,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 5,
+    writer: 1,
     title: "malpaso es tu nuevo nombre",
     img: "img/malpaso-es-tu-nuevo-nombre.jpeg",
     date: "19 de enero 2017",
@@ -201,6 +207,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 4,
+    writer: 1,
     title: "diálogo de dos tormentas",
     img: "img/dialogo-de-dos-tormentas.jpeg",
     date: "15 de enero 2017",
@@ -299,6 +306,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 3,
+    writer: 1,
     title: "Ingravidez",
     img: "img/ingravidez.jpeg",
     date: "8 de enero 2017",
@@ -364,6 +372,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 2,
+    writer: 1,
     title: "Paisaje",
     img: "img/paisaje.jpg",
     date: "5 de enero 2017",
@@ -397,6 +406,7 @@ angular.module('bucleApp.core', [])
   },
   {
     id: 1,
+    writer: 1,
     title: "Variación",
     img: "img/variacion.jpg",
     date: "1 de enero 2017",
