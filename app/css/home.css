@@ -1,4 +1,5 @@
 .home .page-main,
+.home .page-footer,
 .home .poem .poem-background {
   background-size: cover!important;
   background-repeat: no-repeat!important;
@@ -9,10 +10,49 @@
 .home .poem {
   overflow: hidden;
 }
-  .home .page-main .text,
+.home .page-main {
+  position: relative;
+}
+    .home .page-main .logo {
+      position: relative;
+      -webkit-transform: translate(-50%, 100%);
+      -ms-transform: translate(-50%, 100%);
+      -moz-transform: translate(-50%, 100%);
+      -o-transform: translate(-50%, 100%);
+      transform: translate(-50%, 100%);
+      left: 50%;
+      top: 50%;
+      height: 30%;
+    }
+    .home .page-main .quote {
+      width: 35%;
+      font-family: 'Slabo 27px', serif;
+      font-style: italic;
+      text-align: center;
+      position: relative;
+      -webkit-transform: translate(-50%, -100%);
+      -ms-transform: translate(-50%, -100%);
+      -moz-transform: translate(-50%, -100%);
+      -o-transform: translate(-50%, -100%);
+      transform: translate(-50%, -100%);
+      left: 50%;
+      top: 50%;
+      font-size: 2em;
+      font-weight: normal;
+      padding-top: 20px;
+    }
+    @media (max-width: 425px) {
+      .home .page-main .quote {
+        width: 80%;
+      }
+    }
+      .home .page-main .quote .writer {
+        text-align: right;
+        font-style: normal;
+        font-weight: bold;
+      }
+  .home .page-footer .text,
   .home .poem .text {
-    padding: 20px;
-    padding-left: 88px;
     position: relative;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -21,6 +61,10 @@
     -o-transform: translateY(-50%);
     transform: translateY(-50%);
     z-index: 99;
+  }
+  .home .poem .text {
+    padding: 20px;
+    padding-left: 88px;
   }
   .home .poem .poem-background {
     -webkit-transform: rotate(0) scale(1);
@@ -44,7 +88,7 @@
   .home .poem .text {
     top: -50%;
   }
-    .home .page-main .title,
+    .home .page-footer .title,
     .home .poem .title {
       font-size: 4em;
       font-weight: bold;
@@ -54,7 +98,6 @@
       padding-top: 5px;
       font-weight: normal;
     }
-    .home .page-main .subtitle,
     .home .poem .verse {
       padding: 0;
       margin: 0;
@@ -70,4 +113,10 @@
     .home .poem .more {
       font-size: 1.1em;
       font-weight: normal;
+    }
+
+    .home .page-footer .subtitle {
+      font-size: 4em;
+      font-weight: normal;
+      text-align: center;
     }

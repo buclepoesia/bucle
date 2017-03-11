@@ -6,19 +6,17 @@
     <section class="page" full-size>
       <div class="page-main"
           ng-parallax
-          pattern="bgPattern"
+          pattern="homePattern"
           speed="0"
           reverse="true"
           full-size>
-        <div class="text">
-          <div class="title">
-            Bucle
-          </div>
-          <div class="subtitle">
-            Poemas escritos desde el espacio
+        <img class="logo" src="img/bucle.svg" />
+        <div class="quote">
+          "{{ quote }}"
+          <div class="writer">
+            {{ writer }}
           </div>
         </div>
-        <custom-footer></custom-footer>
       </div>
     </section>
     <section class="poem"
@@ -55,7 +53,7 @@
       </div>
     </section>
     <section class="page" full-size>
-      <div class="page-main"
+      <div class="page-footer"
           ng-parallax
           pattern="bgPattern"
           speed="0"
@@ -74,7 +72,7 @@
             </span>
           </div>
         </div>
-        <custom-footer></custom-footer>
+        <main-footer></main-footer>
       </div>
     </section>
   </main>

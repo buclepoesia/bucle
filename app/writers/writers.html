@@ -1,0 +1,13 @@
+<div class="poems">
+
+  <custom-header></custom-header>
+
+  <div ng-repeat="writer in writers" class="text" min-height>
+    <div class="title" ng-click="goPoem(writer.id)">
+      {{ writer.name }}
+    </div>
+  </div>
+
+  <main-footer></main-footer>
+
+</div>

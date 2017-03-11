@@ -8,7 +8,8 @@ angular.module('bucleApp', [
   'bucleApp.core',
   'bucleApp.home',
   'bucleApp.poem',
-  'bucleApp.writer'
+  'bucleApp.writer',
+  'bucleApp.writers'
 ]).
 config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
   $locationProvider.hashPrefix('!');

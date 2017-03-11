@@ -9,4 +9,16 @@ angular.module('bucleApp.core')
       replace: true
     };
   }
+])
+
+.directive('mainFooter', [
+  function () {
+    return {
+      templateUrl: 'components/templates/main-footer.html',
+      link: function(scope, element, attrs) {
+        scope.date = new Date();
+      },
+      replace: true
+    };
+  }
 ]);

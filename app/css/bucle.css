@@ -117,18 +117,53 @@ header {
       background-repeat: no-repeat;
     }
 
-footer {
+footer.main-footer {
+  text-align: center;
+  width: 100%;
+  z-index: 3000;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid #FFFFFF;
+}
+.home footer.main-footer {
   position: absolute;
+}
+footer.main-footer div {
+  padding: 20px;;
+}
+  footer.main-footer section.made {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+    footer.main-footer section.social a {
+      margin-right: 20px;
+      font-weight: bold;
+    }
+    footer.main-footer section.social a:last-child {
+      margin-right: 0px;
+    }
+    footer.main-footer section.made p,
+    footer.main-footer section.copyright p {
+      margin: 0;
+    }
+    footer.main-footer section.made p a,
+    footer.main-footer section.copyright p a {
+      color: inherit;
+      font-weight: bold;
+    }
+
+footer.custom-footer {
+  position: relative;
   z-index: 3000;
   bottom: 0;
   left: 0;
   padding: 20px;
 }
-.poems footer,
-.writers footer {
+.poems footer.custom-footer,
+.writers footer.custom-footer {
   position: inherit;
 }
-  footer section {
+  footer section.custom-footer {
     font-size: 0.9em;
     font-weight: lighter;
     padding: 5px;

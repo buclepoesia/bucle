@@ -10,16 +10,30 @@ angular.module('bucleApp.home', ['ngRoute'])
 }])
 
 .controller('HomeCtrl', [
+  '$interval',
   '$location',
   '$scope',
   '$window',
   'Device',
   'Page',
   'Poems',
-  function($location, $scope, $window, Device, Page, Poems) {
+  'Quotes',
+  function($interval, $location, $scope, $window, Device, Page, Poems, Quotes) {
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
+    $scope.homePattern = '../img/home.jpg';
     $scope.bgPattern = '../img/bg.jpeg';
+    var quoteIndex = 0;
+    $scope.quote = Quotes[quoteIndex].quote;
+    $scope.writer = Quotes[quoteIndex].writer;
+
+    $interval(function () {
+      quoteIndex = Quotes.length === quoteIndex ? 0 : quoteIndex;
+
+      $scope.quote = Quotes[quoteIndex].quote;
+      $scope.writer = Quotes[quoteIndex].writer;
+      quoteIndex += 1;
+    }, 4000);
 
     var showNext = function () {
       return Poems.length > $scope.page * Page.elements;
