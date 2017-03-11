@@ -21,8 +21,8 @@ angular.module('bucleApp.home', ['ngRoute'])
   function($interval, $location, $scope, $window, Device, Page, Poems, Quotes) {
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
-    $scope.homePattern = '../img/home.jpg';
-    $scope.bgPattern = '../img/bg.jpeg';
+    $scope.homePattern = 'img/home.jpg';
+    $scope.bgPattern = 'img/bg.jpeg';
     var quoteIndex = 0;
     $scope.quote = Quotes[quoteIndex].quote;
     $scope.writer = Quotes[quoteIndex].writer;
