@@ -14,13 +14,23 @@ angular.module('bucleApp.writer', ['ngRoute'])
   '$routeParams',
   '$scope',
   '$window',
+  'Poems',
   'Writers',
-  function($location, $routeParams, $scope, $window, Writers) {
+  function($location, $routeParams, $scope, $window, Poems, Writers) {
     $window.scrollTo(0, 0);
 
-    var id = parseInt($routeParams.id);
-    var writer = Writers.filter( function(obj) {
-      return obj.id == id;
+    var writerId = parseInt($routeParams.id);
+    var writer = Writers.filter( function(writerObj) {
+      return writerObj.id == writerId;
     });
     $scope.writer = writer[0];
+    $scope.getPoem = function (poemId) {
+      var poem = Poems.filter( function(poemObj) {
+        return poemObj.id == poemId;
+      });
+      return poem[0];
+    };
+    $scope.goPoem = function (id) {
+      $location.path('poem/' + id);
+    };
 }]);

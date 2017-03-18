@@ -2,4 +2,31 @@
   <a ng-href="#!/home" class="logo-link">
     <span class="logo"></span>
   </a>
+  <div class="menu" ng-init="showMenu = false">
+    <button class="btn-menu" ng-click="showMenu = !showMenu">
+      <svg class="_3DJPT" version="1.1" viewBox="0 0 32 32" width="32" height="32" aria-labelledby="icon-title-7059 icon-desc-7060" aria-hidden="false"><path d="M7 15.5c0 1.9-1.6 3.5-3.5 3.5s-3.5-1.6-3.5-3.5 1.6-3.5 3.5-3.5 3.5 1.6 3.5 3.5zm21.5-3.5c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5zm-12.5 0c-1.9 0-3.5 1.6-3.5 3.5s1.6 3.5 3.5 3.5 3.5-1.6 3.5-3.5-1.6-3.5-3.5-3.5z"></path></svg>
+    </button>
+    <ul ng-show="showMenu" class="modules" click-outside="showMenu = false">
+      <li>
+        <a ng-href="#!/home">
+          Home
+        </a>
+      </li>
+      <li>
+        <a ng-href="#!/texts">
+          Textos
+        </a>
+      </li>
+      <li>
+        <a ng-href="#!/writers">
+          Autores
+        </a>
+      </li>
+      <li>
+        <a ng-href="#!/home">
+          Proyecto
+        </a>
+      </li>
+    </ul>
+  </div>
 </header>

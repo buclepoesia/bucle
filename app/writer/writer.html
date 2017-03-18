@@ -11,6 +11,17 @@
         {{ paragraph }}
       </p>
     </div>
+    <div class="title">
+      Textos
+    </div>
+    <div class="texts" ng-repeat="id in writer.texts">
+      <div class="title" ng-click="goPoem(id)">
+        {{ getPoem(id).title }}
+      </div>
+      <div class="date">
+        {{ getPoem(id).date }}
+      </div>
+    </div>
   </div>
 
   <main-footer></main-footer>

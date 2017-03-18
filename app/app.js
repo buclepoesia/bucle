@@ -2,12 +2,14 @@
 
 // Declare app level module which depends on views, and components
 angular.module('bucleApp', [
+  'ngAnimate',
   'ngParallax',
   'ngRoute',
-  'bucleApp.archives',
+  'angular-click-outside',
   'bucleApp.core',
   'bucleApp.home',
   'bucleApp.poem',
+  'bucleApp.texts',
   'bucleApp.writer',
   'bucleApp.writers'
 ]).

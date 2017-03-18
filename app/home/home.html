@@ -11,7 +11,7 @@
           reverse="true"
           full-size>
         <img class="logo" src="img/bucle.svg" />
-        <div class="quote">
+        <div class="quote" ng-animate-swap="quote">
           "{{ quote }}"
           <div class="writer">
             {{ writer }}
@@ -54,15 +54,15 @@
     </section>
     <section class="page" full-size>
       <div class="page-footer"
+          id="grain"
           ng-parallax
-          pattern="getSrc(bgPattern)"
           speed="0"
           reverse="true"
           full-size>
         <div class="text">
           <div class="subtitle">
-            <span ng-click=goArchives()>
-              Archivos
+            <span ng-click=goTexts()>
+              Textos
             </span>
             <span ng-show="showNext">
               |

@@ -25,14 +25,15 @@ body {
   }
   body .home .poem .date,
   body .poems .text .writer,
-  body .poems .text .date {
+  body .poems .text .date,
+  body header div.menu ul.modules li {
     font-size: 2em;
   }
   body .home .poem .more {
     font-size: 2em;
   }
-  body footer section {
-    font-size: 2em;
+  body footer {
+    font-size: 1.5em;
   }
 }
 @media (min-width: 321px) and (max-width: 375px) {
@@ -53,14 +54,15 @@ body {
   }
   body .home .poem .date,
   body .poems .text .writer,
-  body .poems .text .date {
+  body .poems .text .date,
+  body header div.menu ul.modules li {
     font-size: 2em;
   }
   body .home .poem .more {
     font-size: 2em;
   }
-  body footer section {
-    font-size: 2em;
+  body footer {
+    font-size: 1.5em;
   }
 }
 @media (min-width: 376px) and (max-width: 425px) {
@@ -81,25 +83,28 @@ body {
   }
   body .home .poem .date,
   body .poems .text .writer,
-  body .poems .text .date {
+  body .poems .text .date,
+  body header div.menu ul.modules li {
     font-size: 2em;
   }
   body .home .poem .more {
     font-size: 2em;
   }
-  body footer section {
-    font-size: 2em;
+  body footer {
+    font-size: 1.5em;
   }
 }
 
 header {
+  width: 100%;
+  height: 48px;
   position: fixed;
   z-index: 9999;
   top: 20px;
-  left: 20px;
 }
 
   header .logo-link {
+    left: 20px;
     background-color: #212121;
     position: fixed;
     width: 48px;
@@ -116,6 +121,78 @@ header {
       background-size: cover;
       background-repeat: no-repeat;
     }
+
+  header .menu {
+    right: 20px;
+    position: fixed;
+  }
+
+    header .menu button {
+      right: 20px;
+      position: fixed;
+      background-color: inherit;
+      border: inherit;
+      padding: 0;
+    }
+    header .menu button:focus {
+      outline: inherit;
+    }
+
+      header .menu button svg {
+        fill: #FFFFFF;
+      }
+
+    header .menu ul.modules {
+      background-color: #212121;
+      margin-top: 33px;
+      padding: 0;
+      list-style: none;
+      font-size: 1.4em;
+      text-align: center;
+    }
+
+    header .menu ul.modules li {
+      padding: 10px 20px 10px 20px;
+    }
+    header .menu ul.modules li:last-child {
+      padding-bottom: 20px;
+    }
+    header .menu ul.modules li:first-child {
+      padding-top: 20px;
+    }
+    header .menu ul.modules li:hover {
+      font-style: italic;
+    }
+    header .menu ul.modules li a {
+      color: inherit;
+      text-decoration: inherit;
+    }
+
+.quote.ng-enter,
+.quote.ng-leave {
+  transition: all 1s;
+}
+
+.writer.ng-enter,
+.writer.ng-leave {
+  transition: all 0.2s;
+}
+.quote.ng-enter,
+.writer.ng-enter {
+  opacity: 0;
+}
+.quote.ng-enter-active,
+.writer.ng-enter-active {
+  opacity: 1;
+}
+.quote.ng-leave,
+.writer.ng-leave {
+  opacity: 1;
+}
+.quote.ng-leave-active,
+.writer.ng-leave-active {
+  opacity: 0;
+}
 
 footer.main-footer {
   text-align: center;

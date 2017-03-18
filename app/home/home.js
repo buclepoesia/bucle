@@ -21,11 +21,11 @@ angular.module('bucleApp.home', ['ngRoute'])
   function($interval, $location, $scope, $window, Device, Page, Poems, Quotes) {
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
-    $scope.homePattern = 'img/home.jpg';
+    $scope.homePattern = 'img/home2.jpg';
     $scope.bgPattern = 'img/bg.jpeg';
-    var quoteIndex = 0;
-    $scope.quote = Quotes[quoteIndex].quote;
-    $scope.writer = Quotes[quoteIndex].writer;
+    var quoteIndex = 1;
+    $scope.quote = Quotes[0].quote;
+    $scope.writer = Quotes[0].writer;
 
     $interval(function () {
       quoteIndex = Quotes.length === quoteIndex ? 0 : quoteIndex;
@@ -33,14 +33,14 @@ angular.module('bucleApp.home', ['ngRoute'])
       $scope.quote = Quotes[quoteIndex].quote;
       $scope.writer = Quotes[quoteIndex].writer;
       quoteIndex += 1;
-    }, 4000);
+    }, 6000);
 
     var showNext = function () {
       return Poems.length > $scope.page * Page.elements;
     };
     $scope.showNext = showNext ();
-    $scope.goArchives = function () {
-      $location.path('archives');
+    $scope.goTexts = function () {
+      $location.path('texts');
     };
     $scope.goPoem = function (id) {
       $location.path('poem/' + id);
