@@ -26,20 +26,19 @@
     }
     .home .page-main .quote {
       width: 35%;
-      font-family: 'Roboto+Slab', serif;
+      font-family: 'Gentium Basic', serif;
       font-style: italic;
       text-align: center;
       position: absolute;
-      -webkit-transform: translate(-50%, 50%);
-      -ms-transform: translate(-50%, 50%);
-      -moz-transform: translate(-50%, 50%);
-      -o-transform: translate(-50%, 50%);
-      transform: translate(-50%, 50%);
+      -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%);
       left: 50%;
-      top: 50%;
       font-size: 2em;
       font-weight: normal;
-      padding-top: 60px;
+      bottom: 40px;
     }
     @media (max-width: 425px) {
       .home .page-main .quote {
@@ -88,11 +87,7 @@
   .home .poem .text {
     top: -50%;
   }
-    .home .page-footer .title,
-    .home .poem .title {
-      font-size: 4em;
-      font-weight: bold;
-    }
+    
     .home .poem .date {
       font-size: 1.4em;
       padding-top: 5px;

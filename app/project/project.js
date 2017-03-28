@@ -1,15 +1,15 @@
 'use strict';
 
-angular.module('bucleApp.writers', ['ngRoute'])
+angular.module('bucleApp.project', ['ngRoute'])
 
 .config(['$routeProvider', function($routeProvider) {
-  $routeProvider.when('/writers', {
-    templateUrl: 'writers/writers.html',
-    controller: 'WritersCtrl'
+  $routeProvider.when('/project', {
+    templateUrl: 'project/project.html',
+    controller: 'ProjectCtrl'
   });
 }])
 
-.controller('WritersCtrl', [
+.controller('ProjectCtrl', [
   '$location',
   '$scope',
   '$window',

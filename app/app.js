@@ -9,12 +9,15 @@ angular.module('bucleApp', [
   'bucleApp.core',
   'bucleApp.home',
   'bucleApp.poem',
+  'bucleApp.project',
   'bucleApp.texts',
   'bucleApp.writer',
   'bucleApp.writers'
-]).
-config(['$locationProvider', '$routeProvider', function($locationProvider, $routeProvider) {
-  $locationProvider.hashPrefix('!');
-
-  $routeProvider.otherwise({redirectTo: '/home'});
+])
+.config([
+  '$locationProvider',
+  '$routeProvider',
+  function($locationProvider, $routeProvider) {
+    $locationProvider.hashPrefix('!');
+    $routeProvider.otherwise({redirectTo: '/home'});
 }]);

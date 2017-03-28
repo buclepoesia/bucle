@@ -8,10 +8,6 @@
   padding-bottom: 20px;
 }
 
-  .poems .text .title {
-    font-size: 4em;
-    font-weight: bold;
-  }
   .poems .text .writer,
   .poems .text .date {
     font-size: 1.4em;

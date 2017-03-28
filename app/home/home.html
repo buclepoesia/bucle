@@ -22,6 +22,7 @@
     <section class="poem"
         ng-init="poemHover=false"
         ng-repeat="poem in poems"
+        id="{{poem.id}}"
         full-size>
       <div class="poem-background"
         ng-class="{hover:poemHover}"

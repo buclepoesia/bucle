@@ -18,7 +18,10 @@ angular.module('bucleApp.home', ['ngRoute'])
   'Page',
   'Poems',
   'Quotes',
-  function($interval, $location, $scope, $window, Device, Page, Poems, Quotes) {
+  function($interval, $location, $scope, $window, Device, Page,
+      Poems, Quotes) {
+    $window.scrollTo(0, 0);
+    console.log($window.pageXOffset);
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
     $scope.homePattern = 'img/home2.jpg';
