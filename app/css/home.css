@@ -87,7 +87,7 @@
   .home .poem .text {
     top: -50%;
   }
-    
+
     .home .poem .date {
       font-size: 1.4em;
       padding-top: 5px;
@@ -115,3 +115,11 @@
       font-weight: normal;
       text-align: center;
     }
+
+.is-mobile .home .poem .title,
+.is-mobile .home .poem .date,
+.is-mobile .home .poem .verse,
+.is-mobile .home .poem .verse li,
+.is-mobile .home .poem .more {
+  opacity: 1!important;
+}

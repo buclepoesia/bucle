@@ -6,6 +6,7 @@ angular.module('bucleApp', [
   'ngParallax',
   'ngRoute',
   'angular-click-outside',
+  'fox.scrollReveal',
   'bucleApp.core',
   'bucleApp.home',
   'bucleApp.poem',
