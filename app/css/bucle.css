@@ -202,6 +202,15 @@ header {
   opacity: 0;
 }
 
+::-moz-selection {
+  background: #FFFFFF;
+  color: #212121;
+}
+::selection {
+  background: #FFFFFF;
+  color: #212121;
+}
+
 footer.main-footer {
   text-align: center;
   width: 100%;
