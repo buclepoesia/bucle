@@ -19,7 +19,7 @@ angular.module('bucleApp.writer', ['ngRoute'])
   function($location, $routeParams, $scope, $window, Poems, Writers) {
     $window.scrollTo(0, 0);
 
-    var writerId = parseInt($routeParams.id);
+    var writerId = $routeParams.id;
     var writer = Writers.filter( function(writerObj) {
       return writerObj.id == writerId;
     });
@@ -31,6 +31,6 @@ angular.module('bucleApp.writer', ['ngRoute'])
       return poem[0];
     };
     $scope.goPoem = function (id) {
-      $location.path('poem/' + id);
+      $location.path('text/' + id);
     };
 }]);

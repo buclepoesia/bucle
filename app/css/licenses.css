@@ -1,0 +1,37 @@
+.licenses:first-child {
+    padding-top: 88px;
+    padding-bottom: 88px;
+}
+
+.licenses .main-title {
+  padding: 20px;
+  padding-left: 88px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  font-family: 'Gentium Basic', serif;
+  font-size: 6em;
+}
+
+.licenses .title {
+  padding: 20px;
+  padding-left: 88px;
+  padding-bottom: 0;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.licenses .type {
+  font-style: italic;
+  font-size: 0.6em;
+}
+
+.licenses .text {
+  padding: 20px;
+  padding-left: 88px;
+  padding-bottom: 20px;
+  font-size: 1em;
+}
+
+.licenses a {
+  color: #FFFFFF;
+}

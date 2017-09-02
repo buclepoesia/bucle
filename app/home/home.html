@@ -35,7 +35,7 @@
       <div class="text"
           ng-mouseleave="poemHover=false"
           ng-mouseover="poemHover=true">
-        <div class="title" ng-click="goPoem(poem.id)" x-sr="enter top over 3s">
+        <div class="title cursor-pointer" ng-click="goPoem(poem.id)" x-sr="enter top over 3s">
           {{ poem.title }}
         </div>
         <div class="date" data-sr="enter top over 3s">
@@ -46,7 +46,7 @@
             {{ verse }}
           </li>
         </ul>
-        <div class="more"
+        <div class="more cursor-pointer"
             ng-show="poem.poem[0].length > 4 || poem.poem.length >= 2"
             ng-click="goPoem(poem.id)" data-sr="enter top over 3s">
           Seguir leyendo...
@@ -62,13 +62,13 @@
           full-size>
         <div class="text">
           <div class="subtitle">
-            <span ng-click=goTexts()>
+            <span ng-click=goTexts() class="cursor-pointer">
               Textos
             </span>
             <span ng-show="showNext">
               |
             </span>
-            <span ng-click=goNext() ng-show="showNext">
+            <span ng-click=goNext() ng-show="showNext" class="cursor-pointer">
               Página siguiente
             </span>
           </div>

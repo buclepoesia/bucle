@@ -3,8 +3,8 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
-    id: 10,
-    writer: 1,
+    id: "bondi",
+    writer: "mat",
     title: "Bondi",
     img: "img/bondi.jpg",
     date: "2 de marzo 2017",
@@ -16,8 +16,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 9,
-    writer: 1,
+    id: "antes",
+    writer: "mat",
     title: "Antes",
     img: "img/antes.jpeg",
     date: "22 de febrero 2017",
@@ -29,8 +29,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 8,
-    writer: 1,
+    id: "en-la-medianera",
+    writer: "mat",
     title: "En la medianera",
     img: "img/en-la-medianera.jpeg",
     date: "15 de febrero 2017",
@@ -44,8 +44,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 7,
-    writer: 1,
+    id: "capaz-de-sobrevivir",
+    writer: "mat",
     title: "Capaz de sobrevivir",
     img: "img/capaz-de-sobrevivir.jpg",
     date: "4 de febrero 2017",
@@ -90,8 +90,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 6,
-    writer: 1,
+    id: "es-el-rey",
+    writer: "mat",
     title: "Es el rey",
     img: "img/es-el-rey.jpg",
     date: "28 de enero 2017",
@@ -108,8 +108,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 5,
-    writer: 1,
+    id: "malpaso-es-tu-nuevo-nombre",
+    writer: "mat",
     title: "malpaso es tu nuevo nombre",
     img: "img/malpaso-es-tu-nuevo-nombre.jpeg",
     date: "19 de enero 2017",
@@ -206,8 +206,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 4,
-    writer: 1,
+    id: "dialogo-de-dos-tormentas",
+    writer: "mat",
     title: "diálogo de dos tormentas",
     img: "img/dialogo-de-dos-tormentas.jpeg",
     date: "15 de enero 2017",
@@ -305,8 +305,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 3,
-    writer: 1,
+    id: "ingravidez",
+    writer: "mat",
     title: "Ingravidez",
     img: "img/ingravidez.jpeg",
     date: "8 de enero 2017",
@@ -371,8 +371,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 2,
-    writer: 1,
+    id: "paisaje",
+    writer: "mat",
     title: "Paisaje",
     img: "img/paisaje.jpg",
     date: "5 de enero 2017",
@@ -405,8 +405,8 @@ angular.module('bucleApp.core', [])
     ]
   },
   {
-    id: 1,
-    writer: 1,
+    id: "variacion",
+    writer: "mat",
     title: "Variación",
     img: "img/variacion.jpg",
     date: "1 de enero 2017",

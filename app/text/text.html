@@ -1,0 +1,55 @@
+<div class="poems">
+
+  <custom-header></custom-header>
+
+  <div class="text" min-height-poem>
+    <div class="title">
+      {{ poem.title }}
+    </div>
+    <div class="writer cursor-pointer" ng-click="goWriter(writer.id)">
+      {{ writer.name }}
+    </div>
+    <div class="date">
+      {{ poem.date }}
+    </div>
+    <ul class="stranza" ng-repeat="stranza in poem.poem track by $index">
+      <li class="verse" ng-repeat="verse in stranza track by $index">
+        {{ verse }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="footer" ng-init="previousHover=false; nextHover=false;">
+    <div class="previous" ng-click="goPoem(poemPrevious.id)"
+        ng-mouseover="previousHover=true" ng-mouseleave="previousHover=false">
+      <img src="{{getSrc(poemPrevious.img)}}" ng-class="{hover:previousHover}"/>
+      <div class="title" ng-hide="previousHover">
+        Poema anterior
+      </div>
+      <div class="text-footer">
+        <div class="title cursor-pointer" ng-show="previousHover">
+          {{poemPrevious.title}}
+        </div>
+        <div class="date" ng-show="previousHover">
+          {{poemPrevious.date}}
+        </div>
+      </div>
+    </div>
+    <div class="next" ng-click="goPoem(poemNext.id)"
+        ng-mouseover="nextHover=true" ng-mouseleave="nextHover=false">
+      <img src="{{getSrc(poemNext.img)}}" ng-class="{hover:nextHover}"/>
+      <div class="title" ng-hide="nextHover">
+        Poema siguiente
+      </div>
+      <div class="text-footer">
+        <div class="title cursor-pointer" ng-show="nextHover">
+          {{poemNext.title}}
+        </div>
+        <div class="date" ng-show="nextHover">
+          {{poemNext.date}}
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

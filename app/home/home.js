@@ -45,7 +45,7 @@ angular.module('bucleApp.home', ['ngRoute'])
       $location.path('texts');
     };
     $scope.goPoem = function (id) {
-      $location.path('poem/' + id);
+      $location.path('text/' + id);
     };
     $scope.goNext = function (page) {
       $scope.page += 1;

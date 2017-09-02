@@ -1,0 +1,50 @@
+<div class="licenses">
+
+  <custom-header></custom-header>
+
+  <div class="main-title">
+    Textos
+  </div>
+  <div>
+    <div class="title">
+      Los textos utilizan licencias <a href="https://creativecommons.org/">Creative Commons</a>.
+      La versión es de <b>Atribución – No Comercial – Sin Obra Derivada</b> <i>(by-nc-nd)</i>, salvo que se detalle otra licensia diferente.
+    </div>
+    <div class="text">
+      {{ license.notice }}
+    </div>
+  </div>
+
+  <div class="main-title">
+    Imágenes
+  </div>
+  <div>
+    <div class="title">
+      Las imágenes utilizadas tienen licencias <a href="https://creativecommons.org/">Creative Commons</a>.
+      La versión es <b>Universal</b> <i>(CC0)</i>, salvo que se detalle otra licensia diferente.
+    </div>
+    <div class="text">
+      {{ license.notice }}
+    </div>
+  </div>
+
+  <div class="main-title">
+    Software
+  </div>
+  <div ng-repeat="license in licenses">
+    <div class="title" ng-click="goLicense(license.link)">
+      <span>
+        {{ license.title }}
+      </span>
+      <span class="type">
+        ({{ license.license }})
+      </span>
+    </div>
+    <div class="text">
+      {{ license.notice }}
+    </div>
+  </div>
+
+</div>
+
+<main-footer></main-footer>

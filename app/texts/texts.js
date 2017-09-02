@@ -20,6 +20,6 @@ angular.module('bucleApp.texts', ['ngRoute'])
     $scope.poems = Poems;
 
     $scope.goPoem = function (id) {
-      $location.path('poem/' + id);
+      $location.path('text/' + id);
     };
 }]);

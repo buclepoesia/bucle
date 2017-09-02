@@ -15,7 +15,7 @@
       Textos
     </div>
     <div class="texts" ng-repeat="id in writer.texts">
-      <div class="title" ng-click="goPoem(id)">
+      <div class="title cursor-pointer" ng-click="goPoem(id)">
         {{ getPoem(id).title }}
       </div>
       <div class="date">

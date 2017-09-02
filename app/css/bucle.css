@@ -232,6 +232,7 @@ footer.main-footer div {
     footer.main-footer section.social a {
       margin-right: 20px;
       font-weight: bold;
+      color: #FFFFFF;
     }
     footer.main-footer section.social a:last-child {
       margin-right: 0px;
@@ -262,3 +263,8 @@ footer.custom-footer {
     font-weight: lighter;
     padding: 5px;
   }
+
+
+.cursor-pointer {
+  cursor: pointer;
+}
