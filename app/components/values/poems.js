@@ -199,7 +199,9 @@ angular.module('bucleApp.core', [])
         "hay veces que la pasas mal",
         "quisieras aplastarlos",
         "pero sos",
-        "como un universo.",
+        "como un universo."
+      ],
+      [
         "La muerte",
         "te hubiera quedado",
         "ridícula."
