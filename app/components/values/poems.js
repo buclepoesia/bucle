@@ -3,6 +3,123 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "la-magnitud",
+    writer: "mat",
+    title: "la magnitud",
+    img: "img/la-magnitud.jpg",
+    date: "2 de septiembre 2017",
+    poem: [
+      [
+        "la montaña",
+        "es una frazada que reposa",
+        "conteniendo el aire"
+      ],
+      [
+        "los árboles",
+        "enredaderas",
+        "trepan y mueren",
+        "progresivamente",
+        "en la escalada"
+      ],
+      [
+        "avanzan arbustos",
+        "un cordón de estrellas",
+        "que se dan a la fuga"
+      ],
+      [
+        "yuyos reptan",
+        "enmudecen",
+        "someten a las piedras",
+        "se ubican entre medio"
+      ],
+      [
+        "en la cima",
+        "rocas",
+        "deambulan",
+        "retuercen",
+        "rechinan",
+        "increpan al sol",
+        "y la noche",
+        "serán vistas",
+        "hasta ser divididas",
+      ]
+    ]
+  },
+  {
+    id: "la-noche-llega",
+    writer: "mat",
+    title: "la noche llega",
+    img: "img/la-noche-llega.jpeg",
+    date: "2 de julio 2017",
+    poem: [
+      [
+        "se acuesta",
+        "sobre las piedras",
+        "con el viento",
+        "que inclina",
+        "las llamas",
+        "y el humo"
+      ],
+      [
+        "las hojas",
+        "de eucalipto",
+        "sobre los leños",
+        "con el arroyo",
+        "que acompaña",
+        "la bajada del cerro"
+      ],
+      [
+        "podemos cruzar",
+        "el valle",
+        "con la mirada",
+        "bordear",
+        "con los dedos",
+        "la figura",
+        "del otro cerro"
+      ],
+      [
+        "podemos curvar",
+        "la vía láctea",
+        "unir los extremos",
+        "con la luz",
+        "oscura",
+        "de la luna"
+      ],
+      [
+        "así",
+        "hasta que",
+        "empiece el día",
+        "pensemos",
+        "en volver",
+        "para cruzar",
+        "varias calles",
+        "llenar la heladera",
+        "responder el correo",
+        "unir",
+        "con los dedos",
+        "el cerro",
+        "y la ciudad"
+      ],
+    ]
+  },
+  {
+    id: "piso-doce",
+    writer: "mat",
+    title: "piso doce",
+    img: "img/piso-doce.jpeg",
+    date: "12 de junio 2017",
+    poem: [
+      [
+        "abre la puerta",
+        "la pintura fresca",
+        "la habitación vacía",
+        "el aire es un cubo",
+        "lo llaman",
+        "la primer noche de un pueblo en extinción",
+      ]
+    ]
+  },
+  {
     id: "bondi",
     writer: "mat",
     title: "Bondi",

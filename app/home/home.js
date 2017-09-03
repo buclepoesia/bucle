@@ -23,7 +23,7 @@ angular.module('bucleApp.home', ['ngRoute'])
     $window.scrollTo(0, 0);
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
-    $scope.homePattern = 'img/home2.jpg';
+    $scope.homePattern = 'img/home.jpg';
     $scope.bgPattern = 'img/bg.jpeg';
     var quoteIndex = 1;
     $scope.quote = Quotes[0].quote;
