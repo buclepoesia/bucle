@@ -5,6 +5,7 @@ angular.module('bucleApp.core')
   {
     id: 'mat',
     name: 'Mat',
+    url: 'https://buclepoesia.github.io/#!/writer/mat',
     img: '',
     description: [
       'La escritura es un hobby más, la mayoría de los textos surgen de diambular en algún taller de la Ciudad de Córdoba.',

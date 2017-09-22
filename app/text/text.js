@@ -27,7 +27,7 @@ angular.module('bucleApp.text', ['ngRoute'])
     $scope.poem = poem[0];
 
     var writer = Writers.filter( function(objWriter) {
-      return objWriter.id == $scope.poem.writer;
+      return objWriter.id == $scope.poem.writerId;
     });
     $scope.writer = writer[0];
 

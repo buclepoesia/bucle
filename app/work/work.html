@@ -1,0 +1,38 @@
+<div class="poems">
+
+  <custom-header></custom-header>
+
+  <div class="text">
+    <div class="title">
+      {{ work.title }}
+    </div>
+    <div class="writer cursor-pointer" ng-click="goWriter(writer.id)">
+      {{ writer.name }}
+    </div>
+    <div class="date">
+      {{ work.date }}
+    </div>
+    <ul class="stranza">
+      <li class="verse cursor-pointer"
+          ng-repeat="poem in work.poems track by $index"
+          ng-click="goPoem(poem.id)">
+        {{ poem.title }}
+      </li>
+    </ul>
+  </div>
+
+  <div class="text" ng-repeat="poem in work.poems track by $index" id="{{poem.id}}">
+    <div class="title">
+      {{ poem.title }}
+    </div>
+    <ul class="stranza" ng-repeat="stranza in poem.poem track by $index">
+      <li class="verse" ng-repeat="verse in stranza track by $index">
+        {{ verse }}
+      </li>
+    </ul>
+  </div>
+
+  <cc-element work={{work}}></cc-element>
+
+  <main-footer></main-footer>
+</div>

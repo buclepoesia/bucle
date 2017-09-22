@@ -4,10 +4,11 @@ angular.module('bucleApp.core', [])
 .constant('Poems', [
   {
     id: "la-magnitud",
-    writer: "mat",
     title: "la magnitud",
+    writerId: "mat",
     img: "img/la-magnitud.jpg",
     date: "2 de septiembre 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "la montaña",
@@ -47,10 +48,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "la-noche-llega",
-    writer: "mat",
+    writerId: "mat",
     title: "la noche llega",
     img: "img/la-noche-llega.jpeg",
     date: "2 de julio 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "se acuesta",
@@ -104,10 +106,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "piso-doce",
-    writer: "mat",
+    writerId: "mat",
     title: "piso doce",
     img: "img/piso-doce.jpeg",
     date: "12 de junio 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "abre la puerta",
@@ -121,10 +124,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "bondi",
-    writer: "mat",
+    writerId: "mat",
     title: "Bondi",
     img: "img/bondi.jpg",
     date: "2 de marzo 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "El espacio a la espera del bondi",
@@ -134,10 +138,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "antes",
-    writer: "mat",
+    writerId: "mat",
     title: "Antes",
     img: "img/antes.jpeg",
     date: "22 de febrero 2017",
+    license: "by-sa",
     poem: [
       [
         "Hace 150 años",
@@ -147,10 +152,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "en-la-medianera",
-    writer: "mat",
+    writerId: "mat",
     title: "En la medianera",
     img: "img/en-la-medianera.jpeg",
     date: "15 de febrero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "Un fernet en la terraza,",
@@ -162,10 +168,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "capaz-de-sobrevivir",
-    writer: "mat",
+    writerId: "mat",
     title: "Capaz de sobrevivir",
     img: "img/capaz-de-sobrevivir.jpg",
     date: "4 de febrero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "Entonces",
@@ -210,10 +217,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "es-el-rey",
-    writer: "mat",
+    writerId: "mat",
     title: "Es el rey",
     img: "img/es-el-rey.jpg",
     date: "28 de enero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "El sol aparece",
@@ -228,10 +236,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "malpaso-es-tu-nuevo-nombre",
-    writer: "mat",
+    writerId: "mat",
     title: "malpaso es tu nuevo nombre",
     img: "img/malpaso-es-tu-nuevo-nombre.jpeg",
     date: "19 de enero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "el sol nos pegaba",
@@ -326,10 +335,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "dialogo-de-dos-tormentas",
-    writer: "mat",
+    writerId: "mat",
     title: "diálogo de dos tormentas",
     img: "img/dialogo-de-dos-tormentas.jpeg",
     date: "15 de enero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "me dijo:",
@@ -425,10 +435,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "ingravidez",
-    writer: "mat",
+    writerId: "mat",
     title: "Ingravidez",
     img: "img/ingravidez.jpeg",
     date: "8 de enero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "abre paso",
@@ -491,10 +502,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "paisaje",
-    writer: "mat",
+    writerId: "mat",
     title: "Paisaje",
     img: "img/paisaje.jpg",
     date: "5 de enero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "así",
@@ -525,10 +537,11 @@ angular.module('bucleApp.core', [])
   },
   {
     id: "variacion",
-    writer: "mat",
+    writerId: "mat",
     title: "Variación",
     img: "img/variacion.jpg",
     date: "1 de enero 2017",
+    license: "by-nc-nd",
     poem: [
       [
         "en invierno",

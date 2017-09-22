@@ -13,6 +13,8 @@ angular.module('bucleApp', [
   'bucleApp.text',
   'bucleApp.project',
   'bucleApp.texts',
+  'bucleApp.work',
+  'bucleApp.works',
   'bucleApp.writer',
   'bucleApp.writers'
 ])

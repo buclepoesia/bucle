@@ -1,0 +1,16 @@
+<div class="texts poems">
+
+  <custom-header></custom-header>
+
+  <div ng-repeat="work in works" class="text" ng-class="{last:$last}" min-height-poem>
+    <div class="title cursor-pointer" ng-click="goWork(work.id)">
+      {{ work.title }}
+    </div>
+    <div class="date">
+      {{ work.date }}
+    </div>
+  </div>
+
+  <main-footer></main-footer>
+
+</div>

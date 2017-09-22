@@ -2,7 +2,7 @@
 
   <custom-header></custom-header>
 
-  <div class="text" min-height-poem>
+  <div class="text">
     <div class="title">
       {{ poem.title }}
     </div>
@@ -18,6 +18,8 @@
       </li>
     </ul>
   </div>
+
+  <cc-element work={{poem}}></cc-element>
 
   <div class="footer" ng-init="previousHover=false; nextHover=false;">
     <div class="previous" ng-click="goPoem(poemPrevious.id)"
