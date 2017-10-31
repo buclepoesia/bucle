@@ -1,5 +1,5 @@
 # bucle-web
-Poems
+Bucle is a personal poetry project.
 
 # Images
 ## Resize
