@@ -3,6 +3,80 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "3-de-noviembre",
+    title: "3 de noviembre",
+    writerId: "mat",
+    img: "img/3-de-noviembre.png",
+    date: "3 de noviembre 2017",
+    license: "by-nc-nd",
+    poem: [
+      [
+        "en la primavera lo que esperamos",
+        "es la calma"
+      ],
+      [
+        "que la lluvia empiece transparente",
+        "y el jugo de naranjas esté fresco"
+      ],
+      [
+        "pero, si en la mañana viene la lluvia negra",
+        "la arena de pólvora"
+      ],
+      [
+        "si la música abre sola las ventanas",
+        "para que bailen grillos voladores oscuros y metálicos"
+      ],
+      [
+        "¿a quién le asusta correr",
+        "si estuviste quieto creyendo en algo?"
+      ],
+      [
+        "dios existe cuando lo ",
+        "necesitamos"
+      ],
+      [
+        "tu pelo parece regarse de carbón",
+        "cuando solo ves pánico"
+      ],
+      [
+        "si la niñez es tan apacible",
+        "por qué la irrumpen a galope de caballos"
+      ],
+      [
+        "sobre la calle están los que viajan desnudos"
+      ],
+      [
+        "nunca vi mayor solidaridad",
+        "que cuando hacía falta"
+      ],
+      [
+        "aquí nadie llora de miedo"
+      ],
+      [
+        "la vereda está rodeada de escombros",
+        "para que la calle esté libre"
+      ],
+      [
+        "llegamos al punto en que la sed",
+        "no se siente"
+      ],
+      [
+        "los oídos podrán abandonarse al silencio"
+      ],
+      [
+        "qué mentiras escucharan de nuevo"
+      ],
+      [
+        "llegó el día en que nadie merece",
+        "la muerte"
+      ],
+      [
+        "qué imagen queda en la ciudad",
+        "cuando todos escapan"
+      ]
+    ]
+  },
+  {
     id: "la-magnitud",
     title: "la magnitud",
     writerId: "mat",
