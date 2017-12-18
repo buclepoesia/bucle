@@ -3,6 +3,30 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "las-vertientes-multiversales",
+    title: "las vertientes multiversales",
+    writerId: "mat",
+    img: "img/las-vertientes-multiversales.jpeg",
+    date: "17 de diciembre 2017",
+    license: "by-nc-nd",
+    poem: [
+      [
+        "pienso al espacio",
+        "como un río",
+        "con la corriente en todas las direcciones"
+      ],
+      [
+        "imagino que el río",
+        "se dobla como una caja"
+      ],
+      [
+        "me angustia pensar",
+        "en la lluvia que alimenta el río",
+        "las precipitaciones del espacio"
+      ]
+    ]
+  },
+  {
     id: "3-de-noviembre",
     title: "3 de noviembre",
     writerId: "mat",
