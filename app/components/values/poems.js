@@ -3,6 +3,22 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "senderos-en-la-poma",
+    title: "senderos en la poma",
+    writerId: "mat",
+    img: "img/senderos-en-la-poma.jpg",
+    date: "26 de diciembre 2017",
+    license: "by-nc-nd",
+    poem: [
+      [
+        "los aires acondicionados",
+        "hacen las veces",
+        "de hormigas",
+        "trepando la pared"
+      ]
+    ]
+  },
+  {
     id: "las-vertientes-multiversales",
     title: "las vertientes multiversales",
     writerId: "mat",
