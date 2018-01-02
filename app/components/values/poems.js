@@ -24,7 +24,7 @@ angular.module('bucleApp.core', [])
     writerId: "mat",
     img: "img/las-vertientes-multiversales.jpeg",
     date: "17 de diciembre 2017",
-    license: "by-nc-nd",
+    license: "by-sa",
     poem: [
       [
         "pienso al espacio",
@@ -224,7 +224,7 @@ angular.module('bucleApp.core', [])
     title: "piso doce",
     img: "img/piso-doce.jpeg",
     date: "12 de junio 2017",
-    license: "by-nc-nd",
+    license: "by-sa",
     poem: [
       [
         "abre la puerta",
@@ -335,7 +335,7 @@ angular.module('bucleApp.core', [])
     title: "Es el rey",
     img: "img/es-el-rey.jpg",
     date: "28 de enero 2017",
-    license: "by-nc-nd",
+    license: "by-sa",
     poem: [
       [
         "El sol aparece",
