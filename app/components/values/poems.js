@@ -3,6 +3,21 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "eslirbo",
+    title: "eslirbo",
+    writerId: "mat",
+    img: "img/eslirbo.jpg",
+    date: "24 de enero 2018",
+    license: "by-sa",
+    poem: [
+      [
+        "la lluvia derrite edificios",
+        "la gravedad",
+        "los derrumba"
+      ]
+    ]
+  },
+  {
     id: "senderos-en-la-poma",
     title: "senderos en la poma",
     writerId: "mat",
