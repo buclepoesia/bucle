@@ -3,6 +3,26 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "jengi",
+    title: "jengi",
+    writerId: "mat",
+    img: "img/jengi.jpg",
+    date: "30 de enero 2018",
+    license: "by-nc-nd",
+    poem: [
+      [
+        "alrededor del fuego",
+        "entonamos una canción nueva",
+        "el primer otoño de la tierra"
+      ],
+      [
+        "el silencio convocaba",
+        "la llama se consumía",
+        "como habitando el vacío"
+      ]
+    ]
+  },
+  {
     id: "eslirbo",
     title: "eslirbo",
     writerId: "mat",
