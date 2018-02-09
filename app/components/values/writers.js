@@ -12,6 +12,7 @@ angular.module('bucleApp.core')
       'Entre los textos también escribe código, software le dice.'
     ],
     texts: [
+      "la-interperie",
       "jengi",
       "eslirbo",
       "senderos-en-la-poma",
