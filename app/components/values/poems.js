@@ -3,6 +3,25 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "la-noche-es-una-fotocopia",
+    title: "la noche es una fotocopia",
+    writerId: "mat",
+    img: "img/la-noche-es-una-fotocopia.jpg",
+    date: "7 de marzo 2018",
+    license: "by-nc-nd",
+    poem: [
+      [
+        "un sonido inaudible",
+        "la noche espesa",
+        "decanta en la plaza"
+      ],
+      [
+        "suena al verano",
+        "que va consumiendo"
+      ]
+    ]
+  },
+  {
     id: "la-interperie",
     title: "la interperie",
     writerId: "mat",
