@@ -3,6 +3,24 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "lumpre",
+    title: "lumpre",
+    writerId: "mat",
+    img: "img/lumpre.jpg",
+    date: "13 de marzo 2018",
+    license: "by-sa",
+    poem: [
+      [
+        "en la ventana",
+        "un edificio",
+        "en construcción"
+      ],
+      [
+        "afuera el barrio"
+      ]
+    ]
+  },
+  {
     id: "la-noche-es-una-fotocopia",
     title: "la noche es una fotocopia",
     writerId: "mat",
