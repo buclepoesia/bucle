@@ -3,6 +3,34 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "conversacion-liquida",
+    title: "conversación líquida",
+    writerId: "mat",
+    img: "img/conversacion-liquida.jpg",
+    date: "27 de marzo 2018",
+    license: "by-nc-nds",
+    poem: [
+      [
+        "la raíz del edificio",
+        "se nutre con agua del suelo"
+      ],
+      [
+        "el ascensor lleva burbujas",
+        "estallan al llegar a las hojas"
+      ],
+      [
+        "dice",
+        "es el tiempo",
+        "es la humedad"
+      ],
+      [
+        "responde",
+        "si te hablo moriría",
+        "de aburrimiento"
+      ]
+    ]
+  },
+  {
     id: "lumpre",
     title: "lumpre",
     writerId: "mat",
