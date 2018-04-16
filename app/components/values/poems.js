@@ -3,6 +3,48 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "cada-voz-es-un-idioma",
+    title: "cada voz es un idioma",
+    writerId: "mat",
+    img: "img/cada-voz-es-un-idioma.jpg",
+    date: "16 de abril 2018",
+    license: "by-nc-nds",
+    poem: [
+      [
+        "en la calle se avanza",
+        "como dentro de un tubo",
+        "de metal o cemento",
+        "y dentro piezas sueltas",
+        "que hacen todos los ruidos",
+        "en la misma dirección"
+      ],
+      [
+        "el encargado de un edificio",
+        "contesta y limpia",
+        "que la inflación ya es seis",
+        "y que le van a dar menos",
+        "en todo el año",
+        "contesta y limpia"
+      ],
+      [
+        "los ingresantes vienen de la facu",
+        "que me cuesta dicen",
+        "que no les sale",
+        "la ciudad es como jhony de kobra kai",
+        "en el disfraz de esqueleto",
+        "pegandole a los que recién llegan"
+      ],
+      [
+        "el sol cae naranjado en las caras",
+        "las aves caen de golpe en los árboles",
+        "las personas caen en los edificios",
+        "y otras salen afuera",
+        "las aves saldrán mañana",
+        "el sol tapará el tubo"
+      ]
+    ]
+  },
+  {
     id: "conversacion-liquida",
     title: "conversación líquida",
     writerId: "mat",
