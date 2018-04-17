@@ -28,7 +28,7 @@ angular.module('bucleApp.core', [])
       ],
       [
         "los ingresantes vienen de la facu",
-        "que me cuesta dicen",
+        "que les cuesta dicen",
         "que no les sale",
         "la ciudad es como jhony de kobra kai",
         "en el disfraz de esqueleto",
