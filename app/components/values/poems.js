@@ -3,12 +3,53 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "vendran-mares-de-concreto",
+    title: "(vendrán mares de concreto)",
+    writerId: "mat",
+    img: "img/vendran-mares-de-concreto.jpg",
+    date: "20 de agosto 2018",
+    license: "by-nc-nd",
+    poem: [
+      [
+        "la tierra suspendida",
+        "por el viento de agosto",
+        "hacían elevar al monte",
+        "y alzarlo en el aire"
+      ],
+      [
+        "sobre los espinillos",
+        "caía el sol difuso",
+        "la ladera de espinas",
+        "se volvía sombra"
+      ],
+      [
+        "(vendrán mares de concreto)"
+      ],
+      [
+        "como una serpiente",
+        "pasaba el arroyo",
+        "sobre piedras rojizas"
+      ],
+      [
+        "frío seco del invierno",
+        "entre las montañas"
+      ],
+      [
+        "la tarde se disipaba",
+        "y la noche caía como flechas"
+      ],
+      [
+        "(vendrán mares de concreto)"
+      ]
+    ]
+  },
+  {
     id: "cada-voz-es-un-idioma",
     title: "cada voz es un idioma",
     writerId: "mat",
     img: "img/cada-voz-es-un-idioma.jpg",
     date: "16 de abril 2018",
-    license: "by-nc-nds",
+    license: "by-nc-nd",
     poem: [
       [
         "en la calle se avanza",
@@ -50,7 +91,7 @@ angular.module('bucleApp.core', [])
     writerId: "mat",
     img: "img/conversacion-liquida.jpg",
     date: "27 de marzo 2018",
-    license: "by-nc-nds",
+    license: "by-nc-nd",
     poem: [
       [
         "la raíz del edificio",

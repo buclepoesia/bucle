@@ -41,7 +41,7 @@
         <div class="date" data-sr="enter top over 3s">
           {{ poem.date }}
         </div>
-        <ul class="verse" data-sr="enter top over 3s">
+        <ul class="verse" data-sr="enter top over 3s" ng-click="goPoem(poem.id)">
           <li ng-repeat="verse in poem.poem[0] | limitTo:4">
             {{ verse }}
           </li>
