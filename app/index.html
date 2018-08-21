@@ -8,8 +8,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:locale" content="es_es" />
 
-  <title>Bucle</title>
+  <meta name="author" content="{{ngMeta['author']}}" />
+  <!-- OR <meta name="author" content="{{ngMeta.author}}" /> -->
+  <meta name="description" content="{{ngMeta.description}}" />
+  <meta name="keywords" content="{{ngMeta.keywords}}" />
+
+  <title ng-bind="ngMeta.title"></title>
 
   <link rel="shortcut icon" href="/favicon/favicon.ico">
 	<link rel="icon" sizes="16x16 32x32 64x64" href="/favicon/favicon.ico">
@@ -32,7 +38,6 @@
 	<meta name="msapplication-TileImage" content="/favicon/favicon-144.png">
 	<meta name="msapplication-config" content="/favicon/browserconfig.xml">
 
-
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
@@ -53,8 +58,20 @@
     ga('create', 'UA-93466661-1', 'auto');
     ga('send', 'pageview');
   </script> -->
+  <!--<script>
+    (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K2FCNRM');
+</script>-->
 </head>
 <body>
+
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K2FCNRM"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
 
   <div ng-view is-mobile></div>
 
@@ -66,7 +83,7 @@
   <script src="https://bowercdn.net/c/ng-simple-parallax-c1331dde2de83c4652cbe0993f2822056fc35cdc/src/ngParallax.min.js"> </script>
   <script src="https://rawgit.com/julianlloyd/scrollReveal.js/v2.1.0/scrollReveal.js"></script>
   <script src="https://cdn.rawgit.com/orapouso/fox-angular-scrollReveal.js/9af09166/dist/fox-angular-scrollReveal.min.js"></script>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ng-meta/1.0.3/ngMeta.min.js"></script>
 
   <script src="app.js"></script>
   <script src="components/values/poems.js"></script>

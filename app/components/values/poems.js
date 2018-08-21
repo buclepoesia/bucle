@@ -9,6 +9,7 @@ angular.module('bucleApp.core', [])
     img: "img/vendran-mares-de-concreto.jpg",
     date: "20 de agosto 2018",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Córdoba, Sierras, Montañas, Monte, Arroyo",
     poem: [
       [
         "la tierra suspendida",
@@ -50,6 +51,7 @@ angular.module('bucleApp.core', [])
     img: "img/cada-voz-es-un-idioma.jpg",
     date: "16 de abril 2018",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Ciudad",
     poem: [
       [
         "en la calle se avanza",
@@ -92,6 +94,7 @@ angular.module('bucleApp.core', [])
     img: "img/conversacion-liquida.jpg",
     date: "27 de marzo 2018",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Ciudad, Edificio",
     poem: [
       [
         "la raíz del edificio",
@@ -120,6 +123,7 @@ angular.module('bucleApp.core', [])
     img: "img/lumpre.jpg",
     date: "13 de marzo 2018",
     license: "by-sa",
+    keywords: "Poema, Poesía, Ciudad, Edificio, Barrio",
     poem: [
       [
         "en la ventana",
@@ -138,6 +142,7 @@ angular.module('bucleApp.core', [])
     img: "img/la-noche-es-una-fotocopia.jpg",
     date: "7 de marzo 2018",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Ciudad, Plaza, Noche",
     poem: [
       [
         "un sonido inaudible",
@@ -157,6 +162,7 @@ angular.module('bucleApp.core', [])
     img: "img/la-interperie.png",
     date: "8 de febrero 2018",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Ciudad, Lluvia, Tormenta",
     poem: [
       [
         "el cielo naranja",
@@ -224,6 +230,7 @@ angular.module('bucleApp.core', [])
     img: "img/jengi.jpg",
     date: "30 de enero 2018",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Canción, Fuego, Otoño",
     poem: [
       [
         "alrededor del fuego",
@@ -244,6 +251,7 @@ angular.module('bucleApp.core', [])
     img: "img/eslirbo.jpg",
     date: "24 de enero 2018",
     license: "by-sa",
+    keywords: "Poema, Poesía, Ciudad, Edificio, Lluvia",
     poem: [
       [
         "la lluvia derrite edificios",
@@ -259,6 +267,7 @@ angular.module('bucleApp.core', [])
     img: "img/senderos-en-la-poma.jpg",
     date: "26 de diciembre 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Ciudad, Aire acondicionado, Hormigas",
     poem: [
       [
         "los aires acondicionados",
@@ -275,6 +284,7 @@ angular.module('bucleApp.core', [])
     img: "img/las-vertientes-multiversales.jpeg",
     date: "17 de diciembre 2017",
     license: "by-sa",
+    keywords: "Poema, Poesía, Río, Espacio, Cosmos",
     poem: [
       [
         "pienso al espacio",
@@ -299,6 +309,7 @@ angular.module('bucleApp.core', [])
     img: "img/3-de-noviembre.png",
     date: "3 de noviembre 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Río Tercero, Explosiones, Atentado",
     poem: [
       [
         "en la primavera lo que esperamos",
@@ -373,6 +384,7 @@ angular.module('bucleApp.core', [])
     img: "img/la-magnitud.jpg",
     date: "2 de septiembre 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Montaña, Escalar, Sierras, Córdoba",
     poem: [
       [
         "la montaña",
@@ -417,6 +429,7 @@ angular.module('bucleApp.core', [])
     img: "img/la-noche-llega.jpeg",
     date: "2 de julio 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Montaña, Sierras, Córdoba, Ciudad, Cerro",
     poem: [
       [
         "se acuesta",
@@ -475,6 +488,7 @@ angular.module('bucleApp.core', [])
     img: "img/piso-doce.jpeg",
     date: "12 de junio 2017",
     license: "by-sa",
+    keywords: "Poema, Poesía, Ciudad",
     poem: [
       [
         "abre la puerta",
@@ -493,6 +507,7 @@ angular.module('bucleApp.core', [])
     img: "img/bondi.jpg",
     date: "2 de marzo 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Bondi, Córdoba, Ciudad",
     poem: [
       [
         "El espacio a la espera del bondi",
@@ -507,6 +522,7 @@ angular.module('bucleApp.core', [])
     img: "img/antes.jpeg",
     date: "22 de febrero 2017",
     license: "by-sa",
+    keywords: "Poema, Poesía, Córdoba, Ciudad",
     poem: [
       [
         "Hace 150 años",
@@ -521,6 +537,7 @@ angular.module('bucleApp.core', [])
     img: "img/en-la-medianera.jpeg",
     date: "15 de febrero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Fernet, Córdoba, Ciudad",
     poem: [
       [
         "Un fernet en la terraza,",
@@ -537,6 +554,7 @@ angular.module('bucleApp.core', [])
     img: "img/capaz-de-sobrevivir.jpg",
     date: "4 de febrero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Córdoba, Ciudad",
     poem: [
       [
         "Entonces",
@@ -586,6 +604,7 @@ angular.module('bucleApp.core', [])
     img: "img/es-el-rey.jpg",
     date: "28 de enero 2017",
     license: "by-sa",
+    keywords: "Poema, Poesía, Sol, Amanecer, Montaña",
     poem: [
       [
         "El sol aparece",
@@ -605,6 +624,7 @@ angular.module('bucleApp.core', [])
     img: "img/malpaso-es-tu-nuevo-nombre.jpeg",
     date: "19 de enero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía",
     poem: [
       [
         "el sol nos pegaba",
@@ -704,6 +724,7 @@ angular.module('bucleApp.core', [])
     img: "img/dialogo-de-dos-tormentas.jpeg",
     date: "15 de enero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Tormenta",
     poem: [
       [
         "me dijo:",
@@ -804,6 +825,7 @@ angular.module('bucleApp.core', [])
     img: "img/ingravidez.jpeg",
     date: "8 de enero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Río, Cerro, Montaña, Córdoba ",
     poem: [
       [
         "abre paso",
@@ -871,6 +893,7 @@ angular.module('bucleApp.core', [])
     img: "img/paisaje.jpg",
     date: "5 de enero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Río, Córdoba, Montaña",
     poem: [
       [
         "así",
@@ -906,6 +929,7 @@ angular.module('bucleApp.core', [])
     img: "img/variacion.jpg",
     date: "1 de enero 2017",
     license: "by-nc-nd",
+    keywords: "Poema, Poesía, Río, Inundación, Ciudad",
     poem: [
       [
         "en invierno",

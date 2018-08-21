@@ -14,10 +14,12 @@ angular.module('bucleApp.text', ['ngRoute'])
   '$routeParams',
   '$scope',
   '$window',
+  'ngMeta',
   'Device',
   'Poems',
   'Writers',
-  function($location, $routeParams, $scope, $window, Device, Poems, Writers) {
+  function($location, $routeParams, $scope, $window, ngMeta, Device, Poems, Writers) {
+
     $window.scrollTo(0, 0);
 
     var id = $routeParams.id;
@@ -39,6 +41,10 @@ angular.module('bucleApp.text', ['ngRoute'])
     var indexNext = index === 0 ? Poems.length - 1 : index - 1;
     $scope.poemPrevious = Poems[indexPrevious];
     $scope.poemNext = Poems[indexNext];
+
+    ngMeta.setTitle($scope.poem.title);
+    ngMeta.setTag('author', $scope.writer.name);
+    ngMeta.setTag('keywords', $scope.poem.keywords);
 
     $scope.getSrc = function (src) {
       return Device.getSrc(src);
