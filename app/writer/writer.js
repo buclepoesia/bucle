@@ -24,13 +24,20 @@ angular.module('bucleApp.writer', ['ngRoute'])
       return writerObj.id == writerId;
     });
     $scope.writer = writer[0];
+
     $scope.getPoem = function (poemId) {
       var poem = Poems.filter( function(poemObj) {
         return poemObj.id == poemId;
       });
       return poem[0];
     };
+
     $scope.goPoem = function (id) {
-      $location.path('text/' + id);
+      var poem = $scope.getPoem(id);
+      if (poem.isPoetryBook) {
+        $location.path('work/' + poem.id);
+      } else {
+        $location.path('text/' + poem.id);
+      }
     };
 }]);

@@ -35,20 +35,20 @@
       <div class="text"
           ng-mouseleave="poemHover=false"
           ng-mouseover="poemHover=true">
-        <div class="title cursor-pointer" ng-click="goPoem(poem.id)" x-sr="enter top over 3s">
+        <div class="title cursor-pointer" ng-click="goPoem(poem)" x-sr="enter top over 3s">
           {{ poem.title }}
         </div>
         <div class="date" data-sr="enter top over 3s">
           {{ poem.date }}
         </div>
-        <ul class="verse" data-sr="enter top over 3s" ng-click="goPoem(poem.id)">
+        <ul class="verse" data-sr="enter top over 3s" ng-click="goPoem(poem)">
           <li ng-repeat="verse in poem.poem[0] | limitTo:4">
             {{ verse }}
           </li>
         </ul>
         <div class="more cursor-pointer"
             ng-show="poem.poem[0].length > 4 || poem.poem.length >= 2"
-            ng-click="goPoem(poem.id)" data-sr="enter top over 3s">
+            ng-click="goPoem(poem)" data-sr="enter top over 3s">
           Seguir leyendo...
         </div>
       </div>

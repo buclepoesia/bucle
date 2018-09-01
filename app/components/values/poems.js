@@ -3,6 +3,27 @@ angular.module('bucleApp.core', [])
 
 .constant('Poems', [
   {
+    id: "langostas-de-un-solo-salto",
+    title: "langostas de un solo salto",
+    writerId: "mat",
+    date: "31 de agosto 2018",
+    img: "img/langostas-de-un-solo-salto.jpg",
+    isPoetryBook: true,
+    poem: [
+      [
+        "las veredas regadas de paredes",
+        "y las calles con todas las direcciones"
+      ],
+      [
+        "el segundo anterior es un silencio",
+        "que no podrá ser recordado"
+      ],
+      [
+        "se libera un estallido en el aire"
+      ]
+    ]
+  },
+  {
     id: "vendran-mares-de-concreto",
     title: "(vendrán mares de concreto)",
     writerId: "mat",

@@ -18,8 +18,8 @@ angular.module('bucleApp.home', ['ngRoute'])
   'Page',
   'Poems',
   'Quotes',
-  function($interval, $location, $scope, $window, Device, Page,
-      Poems, Quotes) {
+  function($interval, $location, $scope, $window, Device, Page, Poems, Quotes) {
+
     $window.scrollTo(0, 0);
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);
@@ -40,13 +40,20 @@ angular.module('bucleApp.home', ['ngRoute'])
     var showNext = function () {
       return Poems.length > $scope.page * Page.elements;
     };
+
     $scope.showNext = showNext ();
     $scope.goTexts = function () {
       $location.path('texts');
     };
-    $scope.goPoem = function (id) {
-      $location.path('text/' + id);
+
+    $scope.goPoem = function (poem) {
+      if (poem.isPoetryBook) {
+        $location.path('work/' + poem.id);
+      } else {
+        $location.path('text/' + poem.id);
+      }
     };
+
     $scope.goNext = function (page) {
       $scope.page += 1;
       $scope.poems = Poems.slice(0, $scope.page * Page.elements);
@@ -54,6 +61,7 @@ angular.module('bucleApp.home', ['ngRoute'])
       var pos = (window.innerHeight - 40) * ($scope.page * Page.elements - 4);
       $window.scrollTo(0, pos);
     };
+
     $scope.getSrc = function (src) {
       return Device.getSrc(src);
     };

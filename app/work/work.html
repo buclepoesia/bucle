@@ -12,17 +12,17 @@
     <div class="date">
       {{ work.date }}
     </div>
-    <ul class="stranza">
+    <ul ng-if="work.showIndex" class="stranza">
       <li class="verse cursor-pointer"
           ng-repeat="poem in work.poems track by $index"
-          ng-click="goPoem(poem.id)">
-        {{ poem.title }}
+          ng-click="goPoemForThisWork(poem.id)">
+        {{ poem.id }}
       </li>
     </ul>
   </div>
 
   <div class="text" ng-repeat="poem in work.poems track by $index" id="{{poem.id}}">
-    <div class="title">
+    <div ng-if="poem.title" class="title">
       {{ poem.title }}
     </div>
     <ul class="stranza" ng-repeat="stranza in poem.poem track by $index">
@@ -34,5 +34,43 @@
 
   <cc-element work={{work}}></cc-element>
 
-  <main-footer></main-footer>
+  <div class="footer" ng-init="previousHover=false; nextHover=false;">
+    <div class="previous" ng-click="goPoem(poemPrevious)"
+        ng-mouseover="previousHover=true" ng-mouseleave="previousHover=false">
+      <img src="{{getSrc(poemPrevious.img)}}" ng-class="{hover:previousHover}"/>
+      <div ng-if="!poemPrevious.isPoetryBook" class="title" ng-hide="previousHover">
+        Poema anterior
+      </div>
+      <div ng-if="poemPrevious.isPoetryBook" class="title" ng-hide="previousHover">
+        Poemario anterior
+      </div>
+      <div class="text-footer">
+        <div class="title cursor-pointer" ng-show="previousHover">
+          {{poemPrevious.title}}
+        </div>
+        <div class="date" ng-show="previousHover">
+          {{poemPrevious.date}}
+        </div>
+      </div>
+    </div>
+    <div class="next" ng-click="goPoem(poemNext)"
+        ng-mouseover="nextHover=true" ng-mouseleave="nextHover=false">
+      <img src="{{getSrc(poemNext.img)}}" ng-class="{hover:nextHover}"/>
+      <div ng-if="!poemNext.isPoetryBook" class="title" ng-hide="nextHover">
+        Poema siguiente
+      </div>
+      <div ng-if="poemNext.isPoetryBook" class="title" ng-hide="nextHover">
+        Poemario siguiente
+      </div>
+      <div class="text-footer">
+        <div class="title cursor-pointer" ng-show="nextHover">
+          {{poemNext.title}}
+        </div>
+        <div class="date" ng-show="nextHover">
+          {{poemNext.date}}
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>

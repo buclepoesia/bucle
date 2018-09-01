@@ -19,14 +19,17 @@
     </ul>
   </div>
 
-  <cc-element work={{poem}}></cc-element>
+  <cc-element ng-if="!poem.isPoetryBook" work={{poem}}></cc-element>
 
   <div class="footer" ng-init="previousHover=false; nextHover=false;">
-    <div class="previous" ng-click="goPoem(poemPrevious.id)"
+    <div class="previous" ng-click="goPoem(poemPrevious)"
         ng-mouseover="previousHover=true" ng-mouseleave="previousHover=false">
       <img src="{{getSrc(poemPrevious.img)}}" ng-class="{hover:previousHover}"/>
-      <div class="title" ng-hide="previousHover">
+      <div ng-if="!poemPrevious.isPoetryBook" class="title" ng-hide="previousHover">
         Poema anterior
+      </div>
+      <div ng-if="poemPrevious.isPoetryBook" class="title" ng-hide="previousHover">
+        Poemario anterior
       </div>
       <div class="text-footer">
         <div class="title cursor-pointer" ng-show="previousHover">
@@ -37,11 +40,14 @@
         </div>
       </div>
     </div>
-    <div class="next" ng-click="goPoem(poemNext.id)"
+    <div class="next" ng-click="goPoem(poemNext)"
         ng-mouseover="nextHover=true" ng-mouseleave="nextHover=false">
       <img src="{{getSrc(poemNext.img)}}" ng-class="{hover:nextHover}"/>
-      <div class="title" ng-hide="nextHover">
+      <div ng-if="!poemNext.isPoetryBook" class="title" ng-hide="nextHover">
         Poema siguiente
+      </div>
+      <div ng-if="poemNext.isPoetryBook" class="title" ng-hide="nextHover">
+        Poemario siguiente
       </div>
       <div class="text-footer">
         <div class="title cursor-pointer" ng-show="nextHover">

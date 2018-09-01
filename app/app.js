@@ -29,7 +29,6 @@ angular.module('bucleApp', [
 
     ngMetaProvider.useTitleSuffix(true);
     ngMetaProvider.setDefaultTitle('Bucle');
-    ngMetaProvider.setDefaultTitleSuffix(' | Bucle Poesía');
     ngMetaProvider.setDefaultTag('description', 'Poesía de cultura libre');
     ngMetaProvider.setDefaultTag('author', 'Bucle Poesía');
     ngMetaProvider.setDefaultTag('keywords', 'Bucle, Poesía, Poema, Poetry, Poems, Literatura, Letras, Cultura, Cultura Libre, Creative commons');

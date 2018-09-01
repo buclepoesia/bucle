@@ -3,7 +3,7 @@
   <custom-header></custom-header>
 
   <div ng-repeat="poem in poems" class="text" ng-class="{last:$last}">
-    <div class="title cursor-pointer" ng-click="goPoem(poem.id)">
+    <div class="title cursor-pointer" ng-click="goPoem(poem)">
       {{ poem.title }}
     </div>
     <div class="date">

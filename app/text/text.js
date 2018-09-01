@@ -49,9 +49,15 @@ angular.module('bucleApp.text', ['ngRoute'])
     $scope.getSrc = function (src) {
       return Device.getSrc(src);
     };
-    $scope.goPoem = function (poemId) {
-      $location.path('text/' + poemId);
+
+    $scope.goPoem = function (poem) {
+      if (poem.isPoetryBook) {
+        $location.path('work/' + poem.id);
+      } else {
+        $location.path('text/' + poem.id);
+      }
     };
+
     $scope.goWriter = function (writerId) {
       $location.path('writer/' + writerId);
     };
