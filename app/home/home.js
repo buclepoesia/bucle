@@ -19,7 +19,6 @@ angular.module('bucleApp.home', ['ngRoute'])
   'Poems',
   'Quotes',
   function($interval, $location, $scope, $window, Device, Page, Poems, Quotes) {
-
     $window.scrollTo(0, 0);
     $scope.page = 1;
     $scope.poems = Poems.slice(0, $scope.page * Page.elements);

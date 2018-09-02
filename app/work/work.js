@@ -15,13 +15,12 @@ angular.module('bucleApp.work', ['ngRoute'])
   '$routeParams',
   '$scope',
   '$window',
-  'ngMeta',
   'Device',
   'Poems',
   'Works',
   'Writers',
-  function($anchorScroll, $location, $routeParams, $scope, $window, ngMeta,
-      Device, Poems, Works, Writers) {
+  function($anchorScroll, $location, $routeParams, $scope, $window, Device,
+      Poems, Works, Writers) {
     $window.scrollTo(0, 0);
 
     var id = $routeParams.id;
@@ -43,10 +42,6 @@ angular.module('bucleApp.work', ['ngRoute'])
     $scope.goWriter = function (writerId) {
       $location.path('writer/' + writerId);
     };
-
-    ngMeta.setTitle($scope.work.title);
-    ngMeta.setTag('author', $scope.writer.name);
-    ngMeta.setTag('keywords', $scope.work.keywords);
 
     $scope.getSrc = function (src) {
       return Device.getSrc(src);
