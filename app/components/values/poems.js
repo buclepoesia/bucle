@@ -94,7 +94,7 @@ angular.module('bucleApp.core', [])
         "los ingresantes vienen de la facu",
         "que les cuesta dicen",
         "que no les sale",
-        "la ciudad es como jhony de kobra kai",
+        "la ciudad es como johnny de kobra kai",
         "en el disfraz de esqueleto",
         "pegandole a los que recién llegan"
       ],
